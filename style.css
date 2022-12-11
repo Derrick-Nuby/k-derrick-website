@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Fira Code', monospace;
+font-family: 'Roboto', sans-serif;
+font-family: 'Fira Code', monospace;
+font-family: 'Inter', sans-serif; */
+
+:root {
+    --bigheadercolor: #CCD6F6;
+    --alltext: #8892B0;
+    --highlight: #007BFF;
+    --docbgcolor: #0A192F;
+    --black: #000000;
+    --darkerbg: #233554;
+    --firacode: 'Fira Code', monospace;
+    --normal: 'Inter', sans-serif;
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--docbgcolor);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--darkerbg);
+    border-radius: 10px;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: var(--docbgcolor);
+    color: var(--alltext);
+    font-size: 18px;
+    font-family: var(--normal);
+}
