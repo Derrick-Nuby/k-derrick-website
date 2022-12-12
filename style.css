@@ -58,11 +58,11 @@ button {
     border: 1px solid var(--highlight);
     font-family: var(--firacode);
     font-weight: 600;
-    padding: 10px;
+    padding: 10px 15px;
     background-color: var(--docbgcolor);
     color: var(--highlight);
     border-radius: var(--border-radius);
-    line-height: 25px;
+    /* line-height: 25px; */
 }
 
 button:hover {
@@ -90,4 +90,96 @@ button:hover {
 
 .reference {
     display: none;
+}
+
+/* End of global */
+/*  */
+/* start of menu */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    border-bottom: 1px solid #007bff10;
+    font-size: 16px;
+}
+
+.dlogo:hover {
+    cursor: pointer;
+}
+
+.dlogo > img {
+    height: 60px;
+}
+
+.mmenu {
+    display: none;
+}
+
+.hmenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.hmenu div:nth-child(6) {
+    margin-left: 20px;
+}
+
+.menutem:hover {
+    cursor: pointer;
+    color: var(--highlight);
+}
+
+
+
+/* responsiveness */
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .hmenu {
+        display: none;
+    }
+    .mmenu {
+        display: block;
+    }
+    .dlogo > img {
+        height: 30px;
+    }
+}
+
+/* iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .hmenu {
+        display: none;
+    }
+    .mmenu {
+        display: block;
+    }
+    .dlogo > img {
+        height: 30px;
+    }
+}
+
+/* Small screens, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body{
+        
+    }
+}
+
+/* Desktops, large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    body{
+        
+    }
+}
+
+/* Extra large screens, TV  */
+@media (min-width: 1201px) {
+    body{
+        
+    }
 }
