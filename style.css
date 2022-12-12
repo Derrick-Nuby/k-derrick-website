@@ -132,13 +132,87 @@ button:hover {
     cursor: pointer;
     color: var(--highlight);
 }
+/* end of menu */
 
+.section1 {
+    padding: 60px 50px;
+}
+
+/* above my name */
+
+.welcometxt {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* my name */
+
+.namemod {
+    padding: 0px;
+    margin: 0px;
+    font-size: 80px;
+}
+
+.desmod {
+    padding: 0px;
+    margin: 0px;
+    font-size: 60px;
+}
+
+.destxt span:nth-child(3), span:nth-child(5) {
+    margin-left: 50px;
+}
+
+.whtxt {
+    margin-top: 50px;
+    width: 800px;
+}
+
+.btsec {
+    margin-top: 60px;
+}
+
+.btsec button:nth-child(2) {
+    margin-left: 40px;
+}
 
 
 /* responsiveness */
 
 /* Mobile devices */
 @media (max-width: 480px) {
+    button {
+        border: 1px solid var(--highlight);
+        font-family: var(--firacode);
+        font-weight: 400;
+        padding: 7px 10px;
+        background-color: var(--docbgcolor);
+        color: var(--highlight);
+        border-radius: var(--border-radius);
+        /* line-height: 25px; */
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #007bff33;
+        color: var(--bigheadercolor);
+    }
+
+    .normaltxt {
+        line-height: 24px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    body{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        background-color: var(--docbgcolor);
+        color: var(--alltext);
+        font-size: 13px;
+        font-family: var(--normal);
+    }
     .hmenu {
         display: none;
     }
@@ -147,11 +221,89 @@ button:hover {
     }
     .dlogo > img {
         height: 30px;
+    }
+    .section1 {
+        padding: 30px 0px;
+        margin: 0px;
+        text-align: center;
+    }
+    .welcometxt {
+        padding: 0px;
+        margin: 0px;
+        font-size: 10px;
+    }
+    .smalltxt {
+        font-family: var(--firacode);
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 8px;
+    }
+    /* my name */
+    
+    .namemod {
+        padding: 0px 0px 10px 0px;
+        margin: 0px;
+        font-size: 37px;
+    }
+    
+    .desmod {
+        margin: 0px;
+        font-size: 20px;
+    }
+    .destxt {
+        font-size: 10px;
+    }
+    .whtxt {
+        padding: 0px 10px;
+        margin-top: 50px;
+        width: 90%;
+        /* text-justify: distribute; */
+    }
+    .btsec {
+        margin-top: 20px;
+    }
+    .destxt span:nth-child(3) {
+        margin-left: 50px;
+    }
+    .destxt span:nth-child(6) {
+        margin-right: 70px;
     }
 }
 
 /* iPads, Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
+    button {
+        border: 1px solid var(--highlight);
+        font-family: var(--firacode);
+        font-weight: 400;
+        padding: 7px 10px;
+        background-color: var(--docbgcolor);
+        color: var(--highlight);
+        border-radius: var(--border-radius);
+        /* line-height: 25px; */
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #007bff33;
+        color: var(--bigheadercolor);
+    }
+
+    .normaltxt {
+        line-height: 24px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    body{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        background-color: var(--docbgcolor);
+        color: var(--alltext);
+        font-size: 13px;
+        font-family: var(--normal);
+    }
     .hmenu {
         display: none;
     }
@@ -160,6 +312,52 @@ button:hover {
     }
     .dlogo > img {
         height: 30px;
+    }
+    .section1 {
+        padding: 30px 0px;
+        margin: 0px;
+        text-align: center;
+    }
+    .welcometxt {
+        padding: 0px;
+        margin: 0px;
+        font-size: 10px;
+    }
+    .smalltxt {
+        font-family: var(--firacode);
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 8px;
+    }
+    /* my name */
+    
+    .namemod {
+        padding: 0px 0px 10px 0px;
+        margin: 0px;
+        font-size: 37px;
+    }
+    
+    .desmod {
+        margin: 0px;
+        font-size: 20px;
+    }
+    .destxt {
+        font-size: 10px;
+    }
+    .whtxt {
+        padding: 0px 10px;
+        margin-top: 50px;
+        width: 90%;
+        /* text-justify: distribute; */
+    }
+    .btsec {
+        margin-top: 20px;
+    }
+    .destxt span:nth-child(3) {
+        margin-left: 50px;
+    }
+    .destxt span:nth-child(6) {
+        margin-right: 70px;
     }
 }
 
