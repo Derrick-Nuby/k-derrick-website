@@ -14,6 +14,7 @@ font-family: 'Inter', sans-serif; */
     --darkerbg: #233554;
     --firacode: 'Fira Code', monospace;
     --normal: 'Inter', sans-serif;
+    --border-radius: 3px;
 
 }
 
@@ -39,4 +40,54 @@ body{
     color: var(--alltext);
     font-size: 18px;
     font-family: var(--normal);
+}
+
+.fira {
+    font-family: var(--firacode);
+}
+
+.brighter {
+    color: var(--bigheadercolor);
+}
+
+.bcolored {
+    color: var(--highlight);
+}
+
+button {
+    border: 1px solid var(--highlight);
+    font-family: var(--firacode);
+    font-weight: 600;
+    padding: 10px;
+    background-color: var(--docbgcolor);
+    color: var(--highlight);
+    border-radius: var(--border-radius);
+    line-height: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #007bff33;
+    color: var(--bigheadercolor);
+}
+
+.normaltxt {
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.emphasized {
+    color: var(--highlight);
+}
+
+.smalltxt {
+    font-family: var(--firacode);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.reference {
+    display: none;
 }
