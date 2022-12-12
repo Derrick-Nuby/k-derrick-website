@@ -54,8 +54,12 @@ a {
     height: 100px;
 }
 
-.section2, section3 {
+.section2, .section3 {
     padding: 10px var(--paddingsections);
+}
+
+.section4 {
+    padding: 0px var(--paddingsections) 80px 80px;
 }
 
 .sechead {
@@ -171,6 +175,20 @@ button:hover {
     display: none;
 }
 
+ul {
+    list-style: none; 
+    
+  }
+ul li::before {
+    content: "\2724";
+    color: var(--highlight);
+    font-weight: 200px; 
+    display: inline-block; 
+    width: 1em; 
+    margin-right: 10px;
+  }
+
+
 /* End of global */
 /*  */
 /* start of menu */
@@ -260,11 +278,27 @@ button:hover {
 .rtext2 {
     width: 68%;
 }
+/* section 3 */
+
+.techs {
+    display: flex;
+    gap: 90px;
+    justify-content: flex-end;
+    padding: 5px 50px;
+}
 
 /* responsiveness */
 
 /* Mobile devices */
 @media (max-width: 480px) {
+    .section2 {
+        padding: 0px;
+
+    }
+    p {
+        padding: 0px;
+        margin: 0px;
+    }
     .header {
         padding: 5px 20px;
     }
@@ -361,16 +395,28 @@ button:hover {
         padding: 0px 10px;
         margin-top: 50px;
         width: 90%;
+        text-align: justify;
         /* text-justify: distribute; */
     }
     .btsec {
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
     }
     .destxt span:nth-child(3) {
         margin-left: 50px;
     }
     .destxt span:nth-child(6) {
         margin-right: 70px;
+    }
+    .techs {
+        display:flex;
+        flex-direction: column;
+        gap: 2px;
+        justify-content: flex-start;
+    }
+    .techclass {
+        
     }
 }
 
