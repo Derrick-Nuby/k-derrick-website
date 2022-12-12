@@ -58,6 +58,11 @@ a {
     padding: 10px var(--paddingsections);
 }
 
+.big {
+    font-size: 23px;
+    font-weight: 600;
+}
+
 .section4 {
     padding: 0px var(--paddingsections) 80px 80px;
 }
@@ -133,6 +138,12 @@ a {
     padding-top: 50px;
 }
 
+.downpadd {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
 up_padd_s {
     padding-top: 30px;
 }
@@ -175,6 +186,10 @@ button:hover {
     display: none;
 }
 
+.nostyle {
+    padding: 0px;
+    margin: 0px;
+}
 ul {
     list-style: none; 
     
@@ -287,11 +302,68 @@ ul li::before {
     padding: 5px 50px;
 }
 
+/* section 4 */
+
+
+
+.rightpr {
+    position: absolute;
+    text-align: right;
+    margin-left: 500px;
+    right: 130px;
+}
+
+.leftpr > img {
+    height: 300px;
+    padding-left: 125px;
+    opacity: 0.5;
+    
+}
+
+.leftpr > img:hover {
+    height: 305px;
+    padding-left: 125px;
+    opacity: 1;
+    transition: 400ms;
+    cursor: pointer;
+    
+}
+
+.secdes {
+    border: 1px solid var(--highlight);
+    padding: 15px 7px 15px 120px;
+    /* width: 80%; */
+}
+
+.sectxt {
+    font-size: 14px;
+    background-color: #007bffa4;
+    color: white;
+}
+
+.pdleft {
+    padding-left: 70px;
+}
+
+.prcons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-left: 120px;
+
+
+}
+
 /* responsiveness */
 
 /* Mobile devices */
 @media (max-width: 480px) {
     .section2 {
+        padding: 0px;
+
+    }
+    .section3 {
         padding: 0px;
 
     }
@@ -415,9 +487,89 @@ ul li::before {
         gap: 2px;
         justify-content: flex-start;
     }
-    .techclass {
+
+    .section4 {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+    /* section 4 */
+
+    /* section 4 */
+
+
+
+    .rightpr {
+        position: absolute;
+        text-align: center;
+        margin-left: 0px;
+        left: 20px;
+        right: 20px;
+    }
+
+    .leftpr > img {
+        height: 170px;
+        padding-left: 0px;
+        opacity: 1;
+        padding-left: auto;
+        padding-right: auto;
+        padding-top: 40px;
+
         
     }
+
+    .leftpr > img:hover {
+        height: 170px;
+        padding-left: 0px;
+        opacity: 1;
+        transition: 400ms;
+        cursor: pointer;
+        
+    }
+
+    .secdes {
+        border: 1px solid var(--highlight);
+        padding: 5px;
+        font-size: 10px;
+        background-color: #007bffa4;
+        color: white;
+        margin-top: 150px;
+    }
+
+
+
+    .secdes br {
+        display: none;
+        width: 100%;
+
+    }
+
+    .sectxt {
+        padding: 5px 50px;
+        margin-top: 150px;
+
+    }
+
+    .end {
+        font-size: 10px;
+    }
+
+    .pdleft {
+        padding: 0px;
+    }
+
+    .prcons {
+        /* height: 10px; */
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+        margin-left: 0px;
+
+
+    }
+
+    
 }
 
 /* iPads, Tablets */
