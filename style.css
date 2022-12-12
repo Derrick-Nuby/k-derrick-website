@@ -54,6 +54,32 @@ a {
     height: 100px;
 }
 
+.section2, section3 {
+    padding: 10px var(--paddingsections);
+}
+
+.sechead {
+    padding: 10px var(--paddingsections);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 5%;
+}
+
+.hidden {
+    display: none;
+}
+
+.hline {
+    background-color: var(--highlight);
+    height: 4px;
+    width: 80%;
+}
+
+.htxt {
+    width: 150px;
+}
+
 .iconsl {
     display: flex;
     flex-direction: column;
@@ -97,6 +123,14 @@ a {
 
 .bcolored {
     color: var(--highlight);
+}
+
+.up_padd {
+    padding-top: 50px;
+}
+
+up_padd_s {
+    padding-top: 30px;
 }
 
 button {
@@ -210,7 +244,7 @@ button:hover {
 
 .whtxt {
     margin-top: 50px;
-    width: 800px;
+    width: 65%;
 }
 
 .btsec {
@@ -220,7 +254,12 @@ button:hover {
 .btsec button:nth-child(2) {
     margin-left: 40px;
 }
+/* section 2 */
 
+
+.rtext2 {
+    width: 68%;
+}
 
 /* responsiveness */
 
@@ -231,6 +270,19 @@ button:hover {
     }
     .rightside, .leftside {
         display: none;
+    }
+    .hidden {
+        display: block;
+    }
+    .htxt {
+        width: 300px;
+        text-align: center;
+    }
+    .sechead {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
     }
     button {
         border: 1px solid var(--highlight);
