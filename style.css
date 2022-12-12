@@ -15,6 +15,7 @@ font-family: 'Inter', sans-serif; */
     --firacode: 'Fira Code', monospace;
     --normal: 'Inter', sans-serif;
     --border-radius: 3px;
+    --paddingsections: 80px;
 
 }
 
@@ -34,12 +35,56 @@ font-family: 'Inter', sans-serif; */
 
 body{
     padding: 0px;
-    margin: 0px;
+    padding: 0px 0px 0px 0px;
     box-sizing: border-box;
     background-color: var(--docbgcolor);
     color: var(--alltext);
     font-size: 18px;
     font-family: var(--normal);
+}
+
+a {
+    text-decoration: none;
+    color: var(--alltext);
+}
+
+.line {
+    background-color: var(--highlight);
+    width: 4px;
+    height: 100px;
+}
+
+.iconsl {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 23px;
+}
+
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    bottom: 0;
+    margin-left: 25px;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 25px;
+}
+
+.orient {
+    writing-mode: vertical-rl;
 }
 
 .fira {
@@ -100,7 +145,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 25px;
+    padding: 5px 35px;
     border-bottom: 1px solid #007bff10;
     font-size: 16px;
 }
@@ -135,7 +180,7 @@ button:hover {
 /* end of menu */
 
 .section1 {
-    padding: 60px 50px;
+    padding: 60px 80px;
 }
 
 /* above my name */
@@ -181,6 +226,12 @@ button:hover {
 
 /* Mobile devices */
 @media (max-width: 480px) {
+    .header {
+        padding: 5px 20px;
+    }
+    .rightside, .leftside {
+        display: none;
+    }
     button {
         border: 1px solid var(--highlight);
         font-family: var(--firacode);
@@ -272,6 +323,9 @@ button:hover {
 
 /* iPads, Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
+    .rightside, .leftside {
+        display: none;
+    }
     button {
         border: 1px solid var(--highlight);
         font-family: var(--firacode);
@@ -363,21 +417,15 @@ button:hover {
 
 /* Small screens, laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
-    body{
-        
-    }
+
 }
 
 /* Desktops, large screens */
 @media (min-width: 1025px) and (max-width: 1200px) {
-    body{
-        
-    }
+
 }
 
 /* Extra large screens, TV  */
 @media (min-width: 1201px) {
-    body{
-        
-    }
+
 }
