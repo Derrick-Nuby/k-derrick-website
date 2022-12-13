@@ -41,6 +41,7 @@ body{
     color: var(--alltext);
     font-size: 18px;
     font-family: var(--normal);
+
 }
 
 a {
@@ -137,7 +138,9 @@ a {
 .up_padd {
     padding-top: 50px;
 }
-
+.paddingu {
+    padding-top: 50px;
+}
 .downpadd {
     padding-top: 0px;
     margin-top: 0px;
@@ -355,6 +358,56 @@ ul li::before {
 
 }
 
+/* other noteworthy projects */
+
+.section44 {
+    padding: 0px 180px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.pdown {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.notepr {
+    border: 1px solid var(--highlight);
+    border-radius: var(--border-radius);
+    padding: 5px 12px 30px 12px;
+}
+
+.uppercons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.smallcons {
+    display: flex;
+    gap: 10px;
+}
+
+.midtxt {
+    text-align: justify;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.endtch {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 10px;
+    padding: 20px 20px 0px 20px;
+}
+
+.prjtit {
+    text-align: center;
+    color: var(--bigheadercolor);
+}
+
 /* responsiveness */
 
 /* Mobile devices */
@@ -412,7 +465,6 @@ ul li::before {
         font-weight: 400;
         font-size: 18px;
     }
-
     body{
         padding: 0px;
         margin: 0px;
@@ -545,7 +597,7 @@ ul li::before {
     }
 
     .sectxt {
-        padding: 5px 50px;
+        padding: 5px;
         margin-top: 150px;
 
     }
@@ -567,6 +619,56 @@ ul li::before {
         margin-left: 0px;
 
 
+    }
+
+    /* other notworth */
+    .section44 {
+        padding: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .pdown {
+        margin-bottom: 50px;
+        margin-top: 200px;
+    }
+    .notepr {
+        border: 1px solid var(--highlight);
+        border-radius: var(--border-radius);
+        padding: 3px 10px 30px 10px;
+        width: 90vw;
+    }
+    
+    .uppercons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0px;
+    }
+    
+    .smallcons {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .midtxt {
+        text-align: justify;
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    
+    .endtch {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 8px;
+        padding: 20px 20px 0px 20px;
+    }
+    
+    .prjtit {
+        text-align: center;
+        color: var(--bigheadercolor);
     }
 
     
